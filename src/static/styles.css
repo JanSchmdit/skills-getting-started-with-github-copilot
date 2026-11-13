@@ -88,18 +88,53 @@ section h3 {
   font-size: 0.95rem;
 }
 
-.participants-section ul {
-  padding-left: 20px;
+.participants-section .participants-list {
+  display: grid;
+  gap: 6px;
+  list-style: none;
+  padding-left: 0;
   color: #444;
 }
 
-.participants-section li {
-  padding: 2px 0;
+.participants-section .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  padding: 4px 0;
+}
+
+.participant-item span {
   overflow-wrap: anywhere;
 }
 
-.participants-section li::marker {
-  color: #3949ab;
+.participant-remove {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid #f0caca;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #b42318;
+}
+
+.participant-remove:hover {
+  background-color: #fff0ef;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #1a237e;
+  outline-offset: 2px;
+}
+
+.participant-remove svg {
+  width: 18px;
+  height: 18px;
 }
 
 .participants-section .no-participants {
